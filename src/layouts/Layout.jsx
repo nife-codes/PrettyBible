@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import "./Layout.css"; // we'll create this in a bit
+import { NavLink, Outlet } from "react-router-dom";
+import "./Layout.css";
 
 const Layout = () => {
   return (
@@ -8,13 +8,13 @@ const Layout = () => {
       <header className="navbar">
         <h2 className="logo">PrettyBible 💖</h2>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/bible">Bible</Link>
-          <Link to="/notes">Notes</Link>
-          <Link to="/quotes">Quotes</Link>
-          <Link to="/wallpapers">Wallpapers</Link>
-          <Link to="/dictionary">Dictionary</Link>
-          <Link to="/settings">Settings</Link>
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/bible">Bible</NavLink>
+          <NavLink to="/notes">Notes</NavLink>
+          <NavLink to="/quotes">Quotes</NavLink>
+          <NavLink to="/wallpapers">Wallpapers</NavLink>
+          <NavLink to="/dictionary">Dictionary</NavLink>
+          <NavLink to="/settings">Settings</NavLink>
         </nav>
       </header>
 
