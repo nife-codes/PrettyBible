@@ -1,5 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import Bible from './pages/Bible';
+import Notes from './pages/Notes';
+import Quotes from './pages/Quotes';
+import Wallpapers from './pages/Wallpapers';
+import Settings from './pages/Settings';
+import Dictionary from './pages/Dictionary';
+import About from './pages/About';
 
 function App() {
   return (
@@ -19,38 +27,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <div>Home Page</div>;
-}
-
-function Bible() {
-  return <div>Bible Page</div>;
-}
-
-function Notes() {
-  return <div>Notes Page</div>;
-}
-
-function Quotes() {
-  return <div>Quotes Page</div>;
-}
-
-function Wallpapers() {
-  return <div>Wallpapers Page</div>;
-}
-
-function Settings() {
-  return <div>Settings Page</div>;
-}
-
-function Dictionary() {
-  return <div>Dictionary Page</div>;
-}
-
-function About() {
-  return <div>About Page</div>;
 }
 
 export default App;
