@@ -1,0 +1,32 @@
+.app-layout {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbeffb;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: #d977a7;
+  }
+  
+  nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #555;
+  }
+  
+  nav a:hover {
+    color: #d977a7;
+  }
+  
+  .content {
+    padding: 2rem;
+  }
+  

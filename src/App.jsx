@@ -8,23 +8,23 @@ import Wallpapers from './pages/Wallpapers';
 import Settings from './pages/Settings';
 import Dictionary from './pages/Dictionary';
 import About from './pages/About';
+import Layout from './layouts/Layout';
 
 function App() {
   return (
     <Router>
-      <div>
-        <h1>PrettyBible</h1>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/bible" element={<Bible />} />
-          <Route path="/notes" element={<Notes />} />
-          <Route path="/quotes" element={<Quotes />} />
-          <Route path="/wallpapers" element={<Wallpapers />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/dictionary" element={<Dictionary />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="bible" element={<Bible />} />
+          <Route path="notes" element={<Notes />} />
+          <Route path="quotes" element={<Quotes />} />
+          <Route path="wallpapers" element={<Wallpapers />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="dictionary" element={<Dictionary />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }
